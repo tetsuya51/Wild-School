@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+  button .text {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .text {
+    visibility: hidden;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    button .text {
+        display: block;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        position: relative;
+        bottom: 800px;
+    }
+  }
