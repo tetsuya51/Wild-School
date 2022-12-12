@@ -17,24 +17,12 @@ body {
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
-    .text {
-    visibility: hidden;
-    }
-  }
 
   @media screen and (min-width: 601px) {
     button .text {
-        display: block;
+        display: inline;
     }
-  }
-
-  @media screen and (min-width: 601px) {
-    .buttons {
-        display: flex;
-        justify-content: center;
-        align-content: flex-start;
-        position: relative;
-        bottom: 800px;
+    body {
+      flex-direction: column;
     }
   }
