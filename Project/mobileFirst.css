@@ -1,0 +1,65 @@
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+      --biggest-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+      --tiny-font-size: .688rem;
+    }
+  }
+
+
+  /* responsive Navbar */
+
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        padding: 0;
+    }
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(2px);
+        height: 100vh;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.3em;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .burgerList {
+        display: block;
+    }
+    .navbar a {
+        color: var(--text-color);
+    }
+    .mobile-menu {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .burgerList {
+        display: none;
+    }
+}
+
+/*  Responsive MAIN   */
+
+
