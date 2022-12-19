@@ -63,3 +63,16 @@
 /*  Responsive MAIN   */
 
 
+@media screen and (max-width: 650px) {
+    .homeDiv {
+        display: grid;
+    }
+    .imgageDiv {
+        width: 150px;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
