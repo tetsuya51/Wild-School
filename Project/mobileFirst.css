@@ -52,6 +52,9 @@
     .mobile-menu {
         margin-left: 0;
     }
+    .imageSticky {
+        position: sticky;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -74,5 +77,15 @@
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+    }
+    .lineBlack {
+        height: 1px;
+        width: 55%;
+        margin: 0px auto;
+        background-color: #413709;
+        box-shadow: 1px 2px 1px black;
+    }
+    .skillsSection .bar {
+        display: none;
     }
 }
