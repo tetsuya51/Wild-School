@@ -113,6 +113,11 @@
         background-color: #413709;
         box-shadow: 1px 2px 1px black;
     }
+}
+
+/*    Responsive Skills   */  
+
+@media screen and (max-width: 650px) {
     .skillsSection .bar {
         display: none;
     }
@@ -130,4 +135,68 @@
         width: 50px;
         height: 50px;
     }
+
+    .projectChess {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alignImageText {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+/*  Footer responsive    */
+
+@media (max-width: 650px) {
+
+	.footer-distributed{
+		padding: 20px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: auto;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 20px;
+	}
+
+	.footer-distributed form{
+		margin-top: 15px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
 }
