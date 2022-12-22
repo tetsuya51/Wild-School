@@ -44,7 +44,7 @@ function afficherTableau() {
     let txt = "";
 
     for (let i=0; i < tabJeu.length ; i++){
-        txt += "<div>";
+        txt += `<div id='line${i}'>`;
         for(let j = 0; j < tabJeu[i].length; j++){
             if(tabJeu[i][j] === 0) {
             txt += "<button id='responsiveBTN' class='btn btn-secondary m-2' onClick='verif(\""+i+"-"+j+"\")'>Click me</button>"
@@ -139,3 +139,24 @@ function genereTableau() {
 
     return tab;
 }
+
+document.getElementById("reload").addEventListener(
+    "click",
+    function() {
+        for (let i = 0; i < 4; i++) {
+            const element = document.getElementById("line" + i)
+            element.remove()
+        }
+        tabResultat = genereTableau();
+        afficherTableau();
+        oldSelection = [] ;
+        nbAffiche = 0;
+        ready = true ;
+        tabJeu = [
+            [0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0]
+        ];
+    }
+)
