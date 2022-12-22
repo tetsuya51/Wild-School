@@ -26,18 +26,17 @@
                         </a>
                     </li>
                     <li class="listClass">
-                        <!--  lien inter page ne fonction pas HELP ME PLS  -->
-                        <a href="#skills" class="nav-a">
+                        <a href="#menuSkills" class="nav-a">
                             <i class="fa-solid fa-book"></i>skills
                         </a>
                     </li>
                     <li class="listClass">
-                        <a href="#qualification" class="nav-a">
+                        <a href="#diplome" class="nav-a">
                             <i class="fa-solid fa-graduation-cap"></i>Qualification
                         </a>
                     </li>
                     <li class="listClass">
-                        <a href="#projects" class="nav-a">
+                        <a href="#menuProjects" class="nav-a">
                             <i class="fa-regular fa-image"></i>Projects
                         </a>
                     </li>
@@ -110,12 +109,12 @@
 
         <!-- --------- Skills Section ---------- -->
 
-        <div class="skillsDescription">
+        <div class="skillsDescription" id="menuSkills">
             <h2>Skills</h2>
             <p>here are the languages learned during my training in school and personally</p>
         </div>
         
-<section class="skillsSection" href="#skills">
+<section class="skillsSection">
     
     <div class="skillsLineOne">
         <div class="skillsOne">
@@ -161,7 +160,7 @@
 
 <!--  ----------- Qualification  ----------- -->
 
-<div class="qualification" href="#qualification">
+<div id="diplome" class="qualification">
     <h2>Qualification</h2>
     <br><br>
     <p>What its empty ? Damn, there's no degree here.<br>
@@ -175,17 +174,27 @@
 
 <!--  ----------- Projects  ----------- -->
 
-<div class="projectDescription">
+<div class="projectDescription" id="menuProjects">
     <h2>My Projects</h2>
 </div>
 
 <section>
-    <div class="gameOne text-center">
+    <div class="iframPlacement">
+    <iframe src="jeux.html" frameborder="0" width="100%" height="650px"></iframe>
+    </div>
+
+
+    <!-- <div class="gameOne text-center">
         <h3>Memory Game</h3>
         <p>tuto youtube :)</p>
         <div class="resultat">
         </div>
-    </div>
+        <button type="button" id="reset" class="btn btn-dark">Recommencer</button>
+        <input type="button" onclick='document.location.reload(false)' value="Recommencer"/>
+    </div> -->
+
+
+
     <div class="projectChess">
         <h3 class="chess">Next Project Chess</h3>
         <div class="alignImageText">
@@ -206,8 +215,8 @@
 <div class="lineBlack"></div>
 
     </main>
- <!--   Footer internet  -->
- <div class="footer">
+ <!--   Footer last project internet -->
+ <div class="footer" id="contact">
     <footer class="footer-distributed">
 
         <div class="footer-left">

@@ -57,6 +57,7 @@
         color: var(--text-color);
     }
     .mobile-menu {
+        position : fixed ;
         margin-left: 0;
     }
     .imageSticky {
@@ -143,6 +144,10 @@
 
     .alignImageText {
         flex-direction: column;
+    }
+
+    iframe {
+        height: 400px;
     }
 
 }

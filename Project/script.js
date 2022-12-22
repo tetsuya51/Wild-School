@@ -8,7 +8,16 @@ navLinks.classList.toggle('mobile-menu')
 /*   Memory Game  */
 
 
+/*      bouton recommencer 
+
+function delet () {
+    remove('reset')
+}
+
+*/
+
 const divResultat = document.querySelector('.resultat');
+
 
 let tabJeu = [
     [0,0,0,0],
@@ -16,6 +25,11 @@ let tabJeu = [
     [0,0,0,0],
     [0,0,0,0]
 ];
+
+
+// boutton recommencer //
+
+const restart = document.getElementById('reset')
 
 
 let tabResultat = genereTableau();
@@ -40,7 +54,6 @@ function afficherTableau() {
         }
         txt += "</div>"
     }
-
     divResultat.innerHTML = txt
 }
 
@@ -104,7 +117,7 @@ function verif(bouton) {
     }
 }
 
-function genereTableau () {
+function genereTableau() {
     let tab = [];
     let nbImage = [0,0,0,0,0,0,0,0];
     

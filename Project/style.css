@@ -118,10 +118,6 @@ header {
     font-size: var(--h1-font-size);
 }
 
-
-
-/* menu burger ne veut pas défiler dans la page !!!!!!   */
-
 .navbar .burgerList {
     position: sticky;
     top: 25px;
@@ -334,7 +330,7 @@ h1 {
 }
 
 
-/* ------------------ footer internet --------------------- */
+/* ------------------ footer last project --------------------- */
 
 
 .footer-distributed{
@@ -360,8 +356,6 @@ h1 {
 }
 
 
-/* Footer left */
-
 .footer-distributed .footer-left{
 	float: left;
 }
@@ -376,17 +370,6 @@ h1 {
 
 .footer-distributed h3 span{
 	color:  #5383d3;
-}
-
-.footerMap {
-	display: inline-block;
-	position: relative;
-	left: 30%;
-	transform: translateX(-50%);
-}
-
-.map {
-	border-radius: 15px 15px 15px 15px;
 }
 
 /* Footer links */
