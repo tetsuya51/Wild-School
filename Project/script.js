@@ -27,10 +27,6 @@ let tabJeu = [
 ];
 
 
-// boutton recommencer //
-
-const restart = document.getElementById('reset')
-
 
 let tabResultat = genereTableau();
 
